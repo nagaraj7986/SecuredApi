@@ -3,13 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using RestApi.Controllers.Custom;
 
 namespace RestApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ValuesController : ApiBaseController
     {
+        // Sample Test
+        private const string SECRET_HEADER = "My-Secret";
+
+        public ValuesController()
+        {
+            if (!HttpContext.Request.Headers.ContainsKey(SECRET_HEADER) || !HttpContext.Request.Headers[SECRET_HEADER].Equals("my-secret"))
+            {
+                //return new StatusCodeResult(401);
+            }
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
