@@ -4627,6 +4627,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "BusinessServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "DataServices": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessServices.dll": {}
+        }
+      },
+      "DataServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/DataServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataServices.dll": {}
+        }
       }
     }
   },
@@ -12278,10 +12301,21 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "BusinessServices/1.0.0": {
+      "type": "project",
+      "path": "../BusinessServices/BusinessServices.csproj",
+      "msbuildProject": "../BusinessServices/BusinessServices.csproj"
+    },
+    "DataServices/1.0.0": {
+      "type": "project",
+      "path": "../DataServices/DataServices.csproj",
+      "msbuildProject": "../DataServices/DataServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "BusinessServices >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12318,7 +12352,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Devlpmnt_Work\\Practice\\Source\\Repos\\SecuredApi\\RestApi\\BusinessServices\\BusinessServices.csproj": {
+              "projectPath": "C:\\Devlpmnt_Work\\Practice\\Source\\Repos\\SecuredApi\\RestApi\\BusinessServices\\BusinessServices.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

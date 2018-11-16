@@ -6,3 +6,11 @@
 /RestApi/RestApi/bin/Debug/netcoreapp2.1
 /RestApi/RestApi/obj/Debug/netcoreapp2.1
 /RestApi/RestApi/RestApi.csproj.user
+/RestApi/SQL2017/obj/Debug
+/RestApi/SQL2017/bin/Debug
+/RestApi/DataServices/obj/Debug/netcoreapp2.1
+/RestApi/DataServices/bin/Debug/netcoreapp2.1
+/RestApi/BusinessServices.Tests/obj/Debug/netcoreapp2.1
+/RestApi/BusinessServices.Tests/bin/Debug/netcoreapp2.1
+/RestApi/BusinessServices/obj/Debug/netcoreapp2.1
+/RestApi/BusinessServices/bin/Debug/netcoreapp2.1
